@@ -39,7 +39,7 @@ public class TaskService {
         
         // 구매자 정보 서비스
         public ResponseEntity<BasicResponse> findBuyer(){
-            List<BuyerInfo> buyerList = buyerRepository.findAll();
+            List<BuyerInfo> buyerList = buyerRepository.getList();
 
             BasicResponse basicResponse = BasicResponse.builder()
                     .total_item_count(buyerList.size())
