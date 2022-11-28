@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+   sql:
+     init:
+       mode: always
+       continue-on-error: true
+       data-location: data.sql
+   datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://mysqldb:3306/task?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+     username: root
+     password: 1234
+     data: classpath:data.sql
+     initialization-mode: always
+   jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    defer-datasource-initialization: true
