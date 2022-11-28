@@ -17,12 +17,10 @@ public class BuyitemInfo {
 
     @OneToOne
     @JoinColumn(name = "itemName", insertable = false, updatable = false)
-    @Column(length = 50)
     private ProductInfo ItemInfo;
 
     @OneToOne
     @JoinColumn(name = "tel", insertable = false, updatable = false)
-    @Column(length = 50)
     private BuyerInfo buyer;
 
     @Column(length = 50)
