@@ -14,3 +14,6 @@
 ##### http://localhost:8081/api/BuyerList
 #### 4. 구매정보 (상품정보 , 구매자, 금액, 구매일자, 구매번호)
 ##### http://localhost:8081/api/PurchaseList
+
+## Docker
+### DB버전정보: mysql:latest
