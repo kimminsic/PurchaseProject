@@ -12,12 +12,9 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@IdClass(BuyitemInfo.BuyitemInfoKey.class)
 public class BuyitemInfo {
 
-    @EqualsAndHashCode
-    @Embeddable
-    static class BuyitemInfoKey implements Serializable {
+
         @OneToOne
         @JoinColumn(name = "itemName", insertable = false, updatable = false)
         private ProductInfo ItemInfo;
@@ -25,7 +22,7 @@ public class BuyitemInfo {
         @OneToOne
         @JoinColumn(name = "tel", insertable = false, updatable = false)
         private BuyerInfo buyer;
-    }
+
 
     private String price;
 
