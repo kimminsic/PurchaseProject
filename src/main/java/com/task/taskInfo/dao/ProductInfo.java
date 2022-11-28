@@ -14,12 +14,16 @@ import java.util.Date;
 public class ProductInfo {
 
     @Id
+    @Column(length = 50)
     private String itemName;
 
+    @Column(length = 50)
     private String price;
 
+    @Column(length = 50)
     private LocalDate register_date;
 
+    @Column(length = 50)
     private String company;
 
 }

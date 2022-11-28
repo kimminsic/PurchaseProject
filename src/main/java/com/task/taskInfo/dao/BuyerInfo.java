@@ -8,9 +8,10 @@ import lombok.Setter;
 @Setter
 @Entity
 public class BuyerInfo {
-
+    @Column(length = 30)
     private String buyerName;
 
     @Id
+    @Column(length = 50)
     private String tel;
 }

@@ -15,19 +15,23 @@ import java.util.List;
 public class BuyitemInfo {
 
 
-        @OneToOne
-        @JoinColumn(name = "itemName", insertable = false, updatable = false)
-        private ProductInfo ItemInfo;
+    @OneToOne
+    @JoinColumn(name = "itemName", insertable = false, updatable = false)
+    @Column(length = 50)
+    private ProductInfo ItemInfo;
 
-        @OneToOne
-        @JoinColumn(name = "tel", insertable = false, updatable = false)
-        private BuyerInfo buyer;
+    @OneToOne
+    @JoinColumn(name = "tel", insertable = false, updatable = false)
+    @Column(length = 50)
+    private BuyerInfo buyer;
 
-
+    @Column(length = 50)
     private String price;
 
+    @Column(length = 50)
     private String buyDate;
 
     @Id
+    @Column(length = 50)
     private String buyNum;
 }
