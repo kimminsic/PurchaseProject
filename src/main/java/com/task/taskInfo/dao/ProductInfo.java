@@ -2,6 +2,7 @@ package com.task.taskInfo.dao;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -18,12 +19,15 @@ public class ProductInfo {
     private String itemName;
 
     @Column(length = 50)
+    @NonNull
     private String price;
 
     @Column(length = 50)
+    @NonNull
     private LocalDate register_date;
 
     @Column(length = 50)
+    @NonNull
     private String company;
 
 }

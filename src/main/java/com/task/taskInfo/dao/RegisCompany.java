@@ -2,6 +2,7 @@ package com.task.taskInfo.dao;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 @Getter
@@ -14,9 +15,11 @@ public class RegisCompany {
     public String companyName;
 
     @Column(length = 30)
+    @NonNull
     public String repreName;
 
     @Column(length = 50)
+    @NonNull
     public String tel;
 
 }

@@ -3,6 +3,7 @@ package com.task.taskInfo.dao;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.io.Serializable;
@@ -24,9 +25,11 @@ public class BuyitemInfo {
     private BuyerInfo buyer;
 
     @Column(length = 50)
+    @NonNull
     private String price;
 
     @Column(length = 50)
+    @NonNull
     private String buyDate;
 
     @Id
