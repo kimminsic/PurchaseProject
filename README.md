@@ -31,3 +31,4 @@
 ## Docker
 
 ### DB버전정보: mysql:latest
+#### 호스트:localhost 사용자:root 비밀번호: 1234
