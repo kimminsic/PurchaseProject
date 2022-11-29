@@ -20,6 +20,7 @@
              - spring-network
            volumes:
              - mysql-data:/var/lib/mysql
+             - ./init/:/docker-entrypoint-initdb.d
        app:
           image: kimminsic/test:task-app
           container_name: server

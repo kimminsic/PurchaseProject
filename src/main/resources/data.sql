@@ -1,3 +1,4 @@
+
 insert into product_info(item_name,company,price,register_date)
     values('비비드 크림 3종 세트','(주)비비드','20,000','2021-11-20');
 insert into buyer_info(tel,buyer_name)
