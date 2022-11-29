@@ -32,4 +32,4 @@
 
 ### DB버전정보: mysql:latest
 #### 호스트:localhost 사용자:root 비밀번호: 1234
-#### 데이터베이스 조회가 안될시 mysql에서 create database task; 
+#### 데이터베이스 조회가 안될시 mysql에서 `create database task` 실행
